@@ -1,3 +1,16 @@
+class SomeClass; end
+
+describe SomeClass, "#some_method" do
+  it "can focus" do
+    # it focus here
+  end
+
+  specify do
+    # it focus here
+  end
+end
+
+
 describe "Something" do
   # can focus describe
 

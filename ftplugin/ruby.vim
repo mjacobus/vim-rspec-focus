@@ -14,11 +14,11 @@ function! s:Preserve(command)
 endfunction
 
 function! s:AddFocusTag()
-  call s:Preserve("normal! ?\\(describe\\|it\\|context\\|scenario\\|feature\\|specify\\)\\s\\+['\"].*['\"]\\s\\+do\<cr>$bhi, :focus\<esc>")
+  call s:Preserve("normal! ?\\(describe\\|it\\|context\\|scenario\\|feature\\|specify\\)\\s\\+.*['\"].*['\"]\\s\\+do\<cr>$bhi, :focus\<esc>")
 endfunction
 
 function! s:AddPendingTag()
-  call s:Preserve("normal! ?\\(describe\\|it\\|context\\|scenario\\|feature\\|specify\\)\\s\\+['\"].*['\"]\\s\\+do\<cr>$bhi, :pending\<esc>")
+  call s:Preserve("normal! ?\\(describe\\|it\\|context\\|scenario\\|feature\\|specify\\)\\s\\+.*['\"].*['\"]\\s\\+do\<cr>$bhi, :pending\<esc>")
 endfunction
 
 function! s:RemoveAllFocusTags()
